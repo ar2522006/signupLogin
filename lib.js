@@ -24,7 +24,7 @@ export const Signup = (fullName, email, password) => {
   showToast("✅ Signup successful! Redirecting...");
 
   setTimeout(() => {
-    window.location.href = "/login.html";
+    window.location.href = "./login.html";
   }, 1500);
 };
 
@@ -40,7 +40,7 @@ export const Login = (email, password) => {
       showToast("✅ Login successful! Redirecting...");
 
       setTimeout(() => {
-        window.location.href = "/";
+        window.location.href = "./";
       }, 1500);
     } else {
       showToast("❌ Incorrect password");

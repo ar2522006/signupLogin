@@ -3,7 +3,7 @@ import { Signup } from "./lib.js";
 const user = JSON.parse(localStorage.getItem("LoggedInUser"));
     
 if (user) {
-      window.location.href = "/";
+      window.location.href = "./";
 }
 
 const form = document.getElementById("SignupForm");
