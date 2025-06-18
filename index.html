@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Account</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(to right, #667eea, #764ba2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      background-color: white;
+      padding: 2rem;
+      width: 100%;
+      max-width: 420px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .card h2 {
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: #666;
+      font-size: 1.1rem;
+    }
+
+    .card .logout-btn {
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #e53e3e;
+      border: none;
+      color: white;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .card .logout-btn:hover {
+      background-color: #c53030;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Welcome back, <span id="username">John Doe</span>!</h2>
+    <p>We're glad to see you again.</p>
+    <button id="LogoutButton" class="logout-btn">Log Out</button>
+  </div>
+
+  <script type="module" src="index.js"></script>
+</body>
+</html>
